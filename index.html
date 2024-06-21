@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/e1428b0a9e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="main.css">
+  <title></title>
+</head>
+
+<body class="grid place-items-center min-h-screen">
+  
+  <main class="w-[80%] min-w-[360px] max-w-[800px] p-5 my-12 sm:my-0 bg-white rounded-lg shadow-md">
+    
+    <div class="flex items-center justify-between">
+      <h1 class="font-bold text-lg">Star Wars: The Last Jedi</h1>
+      <p class="text-gray-500 text-sm font-semibold"><span class="text-blue-500">7.4</span>/10</p>
+    </div>
+    
+    <p class="text-blue-500 text-sm">Action & Adventure</p>
+    
+    <div class="grid gap-6 md:grid-cols-[30%_auto] mt-10">
+      <div class="relative rounded-md overflow-hidden
+        before:absolute
+        before:bottom-0
+        before:left-0
+        before:h-full
+        before:w-full
+        before:bg-gradient-to-t
+        before:from-neutral-800
+        before:to-50%
+      ">
+        <img src="https://lumiere-a.akamaihd.net/v1/images/sb_payoff_1-sht_v6_lg_tm_lg_e528c9e9.jpeg?region=0%2C0%2C810%2C1200" alt="">
+        <div class="absolute bottom-0 left-0 flex items-center justify-between p-4 w-full text-white">
+          <p class="font-bold">$19.99</p>
+          <button class="border-2 border-white py-1 px-6 rounded-full">Buy</button>
+        </div>
+      </div>
+      
+      <div>
+        <h3 class="font-bold text-lg">About the Movie</h3>
+        <p class="text-sm">In Lucasfilm's Star Wars: The Last Jedi, the Skywalker saga continues as the heroes of The Force Awakens join the galactic legends in an epic adventure that unlocks new mysteries of the Force and shocking revelations of the past.</p>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-5 [&>ul>li]:text-blue-500">
+          <ul class="md:row-span-2">
+            <h2 class="font-bold mb-1">Actors</h2>
+            <li>Oscar Isaac</li>
+            <li>Mark Hamill</li>
+            <li>Daisy Ridley</li>
+            <li>John Boyega</li>
+            <li>Kelly Marie Tran</li>
+          </ul>
+          
+          <ul>
+            <h2 class="font-bold mb-1">Director</h2>
+            <li>Rian Johnson</li>
+          </ul>
+          
+          <ul>
+            <h2 class="font-bold mb-1">Screenwriter</h2>
+            <li>Rian Johnson</li>
+          </ul>
+          
+          <ul class="md:col-start-2">
+            <h2 class="font-bold mb-1">Producers</h2>
+            <li>Kathleen Kennedy</li>
+            <li>Ram Bergman</li>
+          </ul>
+          
+          <div class="flex items-center justify-between col-span-full mt-5">
+            <a class="text-sm text-blue-500 font-semibold underline" href="">See more.</a>
+            <button id="trailer-btn" class="flex items-center gap-0 bg-black rounded-full text-white text-sm border-2 h-8 border-black w-fit overflow-hidden">
+              <span id="btn-text" class="px-3">Watch Trailer</span>
+              <span class="grid place-items-center size-8 rounded-full bg-white text-black">
+                <i class="fa fa-play"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+    <script src="app.js"></script>
+  </main>
+
+</body>
+
+</html>
